@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Boarding Information";
+}
+
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById('btnTest').focus();
+    }
+</script>
+
+<div>
+    <div id="loader"></div>
+    <div style="float:none">
+        <input type="button" id="btnTest" value="Search" onclick="location.href='@Url.Action("Index", "Home", new { submit = "value1" })'" />
+    </div>
+    <div>
+        <h3>@ViewBag.Message</h3>
+    </div>
+</div>
